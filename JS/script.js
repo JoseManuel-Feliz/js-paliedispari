@@ -64,3 +64,38 @@ btnSubmit.addEventListener('click', function (event) {
 
 })
 
+/* 
+
+Pari e Dispari
+L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+Generiamo un numero random(sempre da 1 a 5) per il computer(usando una funzione).
+Sommiamo i due numeri
+Stabiliamo se la somma dei due numeri è pari o dispari(usando una funzione)
+Dichiariamo chi ha vinto.
+
+*/
+
+
+//1. Recuperare gli elementi di interesse dal DOM. 
+
+//2. Creo una funzione per poter generare un numero al cpu
+
+//3. Recupero i dati inseriti dall'utente 
+
+//4. Summo i due nr possibilmente con un funzione
+
+//5. Creo una funzione per poter stabilire se la somma
+// è pari oppure dispari
+
+//6. Sia il risultato e sia chi è stato il vincitore
+
+/* Fase di elaborazione */
+
+//1. Recuperare gli elementi di interesse dal DOM. 
+const numChoiced = document.getElementById('Chioce-num')
+
+const evenOdd = document.getElementById('even-odd')
+
+const btnEvenOdd = document.getElementById('nolose')
+
+//2. Creare un text input nel quale l'utente sceglie un numero tra 1 e 5
