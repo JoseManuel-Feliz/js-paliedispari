@@ -47,7 +47,6 @@ const btnSubmit = document.getElementById('Btn-form')
 //2.Raccogliere al click i dati inserite dall'utente
 
 
-
 btnSubmit.addEventListener('click', function (event) {
     event.preventDefault();
 
@@ -55,6 +54,13 @@ btnSubmit.addEventListener('click', function (event) {
     console.log(textToReverse);
 
 
+    const reverseWord = textReverser(textToReverse);
+    console.log(reverseWord);
 
+    /* Fase output */
+
+    const messageWrapper = document.getElementById('Palindroma-message')
+    messageWrapper.innerText = message
 
 })
+
