@@ -1,7 +1,7 @@
 console.log('JS OK')
 
 /* 
-Palidroma
+Palindroma
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma */
 
@@ -28,3 +28,15 @@ Creare una funzione per capire se la parola inserita è palindroma */
 
 */
 
+
+/* Fase di preparazione */
+
+//1. Chiedere all'utente di inserire una parola con un form.
+//1.b Recuperare l'elemento di interesse dal DOM.
+
+/* Form */
+const formInput = document.getElementById('Palindroma')
+/* Text area */
+const textInputField = document.getElementById('Pali-word')
+/* Btn */
+const btnSubmit = document.getElementById('Btn-form')
