@@ -1,5 +1,7 @@
 console.log('JS OK')
 
+/* palindroma */
+
 /* 
   /3. Creare una funzione 
   
@@ -26,4 +28,24 @@ function textReverser(text) {
         : message = `${text} è una parola palindroma  di ${reverseText}`
 
     return reverseText, message;
+}
+
+
+/* Pari o dispari */
+
+//2. Creo le mie funzioni seguendo la scaletta
+
+
+function randomnNum(max) {
+    return Math.floor(Math.random() * max) + 1;
+}
+
+function sumNumbers(a, b) {
+    const sumNum = a + b
+    return sumNum
+}
+function even(a) {
+    let message;
+    a % 2 === 0 ? message = 'Pari' : message = 'Dispari'
+    return message
 }

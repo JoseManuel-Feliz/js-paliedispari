@@ -92,31 +92,56 @@ Dichiariamo chi ha vinto.
 /* Fase di elaborazione */
 
 //1. Recuperare gli elementi di interesse dal DOM. 
-const numChoiced = document.getElementById('Chioce-num')
+const numChoiced = document.getElementById('Choice-num')
 
 const evenOdd = document.getElementById('even-odd')
 
-const btnEvenOdd = document.getElementById('nolose')
+const btnRandomizer = document.getElementById('nolose')
 
-//2. Creo una funzione per poter generare un numero al cpu
-
-
-function randomnNum(max) {
-    const randos = Math.floor(Math.random() * max) + 1;
-}
-
-function sumNumbers(a, b) {
-    const sumNum = a + b
-}
-
-function even(a, b) {
-    let message;
-    (a % b) = 0 ? message = 'Pari' : message = 'Dispari'
-    return message
-}
+const winnerPrintMessage = document.getElementById('winner-message')
 
 
 /* Fase di gestione eventi */
+
+//numero random cpu
+
+const cpuMaxNum = 5;
+btnRandomizer.addEventListener('click', function (e) {
+    e.preventDefault
+
+    const cpu = randomnNum(cpuMaxNum)
+    console.log(cpu)
+
+    //3. Recupero i dati inseriti dall'utente 
+
+    const fieldnumChoiced = parseInt(numChoiced.value)
+    console.log(fieldnumChoiced)
+
+    const fieldEvenOdd = evenOdd.value
+    console.log(fieldEvenOdd)
+    //4. Summo i due nr possibilmente con un funzione
+
+    const sumTotal = sumNumbers(cpu, fieldnumChoiced)
+    console.log(sumTotal)
+
+    //5. aggiungo la funzione creata in precedenza per poter stabilire se la somma
+    // è pari oppure dispari
+
+    const evenValidator = even(sumTotal)
+    console.log(typeof evenValidator)
+    let winner;
+
+    //6. Stampo sia il risultato e sia chi è stato il vincitore
+
+    fieldEvenOdd === evenValidator ? winner = 'player' : winner = 'cpu'
+
+    const winnerMessage = `${evenValidator} ha vinto ${winner}`
+    console.log(winnerMessage)
+    winnerPrintMessage.innerText = winnerMessage
+
+
+})
+
 
 
 
