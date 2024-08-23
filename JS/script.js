@@ -40,3 +40,21 @@ const formInput = document.getElementById('Palindroma')
 const textInputField = document.getElementById('Pali-word')
 /* Btn */
 const btnSubmit = document.getElementById('Btn-form')
+
+
+/* Fase gestione eventi*/
+
+//2.Raccogliere al click i dati inserite dall'utente
+
+
+
+btnSubmit.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const textToReverse = textInputField.value.trim();
+    console.log(textToReverse);
+
+
+
+
+})
