@@ -87,7 +87,7 @@ Dichiariamo chi ha vinto.
 //5. Creo una funzione per poter stabilire se la somma
 // è pari oppure dispari
 
-//6. Sia il risultato e sia chi è stato il vincitore
+//6. Stampo sia il risultato e sia chi è stato il vincitore
 
 /* Fase di elaborazione */
 
@@ -98,4 +98,25 @@ const evenOdd = document.getElementById('even-odd')
 
 const btnEvenOdd = document.getElementById('nolose')
 
-//2. Creare un text input nel quale l'utente sceglie un numero tra 1 e 5
+//2. Creo una funzione per poter generare un numero al cpu
+
+
+function randomnNum(max) {
+    const randos = Math.floor(Math.random() * max) + 1;
+}
+
+function sumNumbers(a, b) {
+    const sumNum = a + b
+}
+
+function even(a, b) {
+    let message;
+    (a % b) = 0 ? message = 'Pari' : message = 'Dispari'
+    return message
+}
+
+
+/* Fase di gestione eventi */
+
+
+
