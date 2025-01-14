@@ -5,10 +5,10 @@ console.log('JS OK')
 /* 
   /3. Creare una funzione 
   
-  //3b. Scomporre la intera parola in lettere ovvero
+  3b. Scomporre la intera parola in lettere ovvero
   recuperare ciascun carattere dell'intera stringa.
   
-  //3c. creare un LOOP il quale inizia a contare dal ultimo carattere 
+  3c. creare un LOOP il quale inizia a contare dal ultimo carattere 
   per poter invertire l'ordine dei caratteri
   
   //3d. Una volta invertito l'ordine dei caratteri unificare tutti i caratteri in un stringa
@@ -16,6 +16,7 @@ console.log('JS OK')
   //3e. Creare una condizione che verifichi che la parola invertita sia identica 
   alla parola iniziale 
   */
+
 
 function textReverser(text) {
     let reverseText = '';
